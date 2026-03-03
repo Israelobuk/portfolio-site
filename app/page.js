@@ -7,7 +7,7 @@ const profile = {
   email: "Is.obukonise@gmail.com",
   github: "https://github.com/Israelobuk",
   linkedin: "https://www.linkedin.com/in/israelobukonise/",
-  cv: "file:///C:/Users/isobu/Downloads/Israel_Obukonise_Resume.pdf",
+  cv: "/files/Israelobukonise_resume.pdf",
   location: "Ontario, Canada",
   current: "Code Ninja",
 };
@@ -83,7 +83,7 @@ export default function HomePage() {
                 <span className="social-icon">in</span>
                 <span>LinkedIn</span>
               </a>
-              <a className="social-link" href={profile.cv} target="_blank" rel="noreferrer">
+              <a className="social-link" href={profile.cv}>
                 <span className="social-icon">CV</span>
                 <span>CV</span>
               </a>
@@ -162,6 +162,8 @@ export default function HomePage() {
     </>
   );
 }
+
+
 
 
 
