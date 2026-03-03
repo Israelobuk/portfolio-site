@@ -7,7 +7,7 @@ const profile = {
   email: "Is.obukonise@gmail.com",
   github: "https://github.com/Israelobuk",
   linkedin: "https://www.linkedin.com/in/israelobukonise/",
-  cv: "/files/Israel%20Obukonise%20Resume.pdf",
+  cv: "/files/resume.pdf",
   location: "Ontario, Canada",
   current: "Code Ninja",
 };
@@ -162,6 +162,7 @@ export default function HomePage() {
     </>
   );
 }
+
 
 
 
