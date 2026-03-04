@@ -7,7 +7,7 @@ const profile = {
   email: "Is.obukonise@gmail.com",
   github: "https://github.com/Israelobuk",
   linkedin: "https://www.linkedin.com/in/israelobukonise/",
-  cv: "/files/Israelobukonise_resume.pdf",
+  cv: "/Israelobukonise_resume.pdf",
   location: "Ontario, Canada",
   current: "Code Ninja",
 };
@@ -21,7 +21,7 @@ const projects = [
     repo: "https://github.com/Israelobuk/blackbox_explainer",
     description:
       "Local-first app that explains likely reasoning paths behind model outputs using evidence claims, assumptions, uncertainty, and confidence checks.",
-    points: ["Schema-validated outputs", "Evidence quote verification", "LM Studio and Ollama support"],
+    points: ["Schema-validated outputs", "Evidence quote verification", "Ollama support"],
   },
   {
     name: "Pulseboard",
