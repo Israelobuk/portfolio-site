@@ -1,5 +1,8 @@
 import ClientEffects from "../components/ClientEffects";
 
+const introHeadline =
+  "I'm a first-year Computer Science student interested in AI, software engineering, and using data to solve real problems across different industries. I enjoy experimenting with models and building projects.";
+
 const profile = {
   name: "Israel Obukonise",
   headline:
@@ -7,7 +10,7 @@ const profile = {
   email: "Is.obukonise@gmail.com",
   github: "https://github.com/Israelobuk",
   linkedin: "https://www.linkedin.com/in/israelobukonise/",
-  cv: "/Israel%20resume.pdf",
+  cv: "/Israel_obukonise_resume%20(1).pdf",
   location: "Ontario, Canada",
   current: "Code Ninja",
 };
@@ -79,7 +82,7 @@ export default function HomePage() {
         <section className="hero reveal">
           <div className="hero-main">
             <div className="hero-copy">
-              <p className="headline">{heroHeadline}</p>
+              <p className="headline">{introHeadline}</p>
             </div>
             <div className="social-links">
               <a className="social-link" href={profile.github} target="_blank" rel="noreferrer">
@@ -181,7 +184,6 @@ export default function HomePage() {
     </>
   );
 }
-
 
 
 
