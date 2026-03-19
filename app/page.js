@@ -7,10 +7,13 @@ const profile = {
   email: "Is.obukonise@gmail.com",
   github: "https://github.com/Israelobuk",
   linkedin: "https://www.linkedin.com/in/israelobukonise/",
-  cv: "/Israel_resume.pdf",
+  cv: "/Israel%20resume.pdf",
   location: "Ontario, Canada",
   current: "Code Ninja",
 };
+
+const heroHeadline =
+  "I’m a first-year Computer Science student interested in AI, software engineering, and using data to solve real problems across different industries. I enjoy experimenting with models and building projects.";
 
 const projects = [
   {
@@ -60,37 +63,46 @@ export default function HomePage() {
               </a>
             </p>
           </div>
-          <nav>
-            <a href="#journey">Journey</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+          <nav className="topnav">
+            <a className="topnav-link" href="#journey">
+              Journey
+            </a>
+            <a className="topnav-link" href="#projects">
+              Projects
+            </a>
+            <a className="topnav-link" href="#contact">
+              Contact
+            </a>
           </nav>
         </header>
 
         <section className="hero reveal">
           <div className="hero-main">
-            <p className="headline">{profile.headline}</p>
+            <div className="hero-copy">
+              <p className="headline">{heroHeadline}</p>
+            </div>
             <div className="social-links">
               <a className="social-link" href={profile.github} target="_blank" rel="noreferrer">
                 <span className="social-icon">GH</span>
-                <span>GitHub</span>
+                <span className="social-link__label">GitHub</span>
               </a>
               <a className="social-link" href={`mailto:${profile.email}`}>
                 <span className="social-icon">@</span>
-                <span>Email</span>
+                <span className="social-link__label">Email</span>
               </a>
               <a className="social-link" href={profile.linkedin} target="_blank" rel="noreferrer">
                 <span className="social-icon">in</span>
-                <span>LinkedIn</span>
+                <span className="social-link__label">LinkedIn</span>
               </a>
               <a className="social-link" href={profile.cv} target="_blank" rel="noreferrer">
                 <span className="social-icon">CV</span>
-                <span>CV</span>
+                <span className="social-link__label">CV</span>
               </a>
             </div>
           </div>
 
           <aside className="hero-card reveal" data-tilt>
+            <div className="hero-card__halo" aria-hidden="true" />
             <div className="profile-photo-wrap">
               <img
                 className="profile-photo"
@@ -98,9 +110,11 @@ export default function HomePage() {
                 alt="Israel Obukonise portrait"
               />
             </div>
-            <p className="card-label">Now</p>
-            <p className="card-value">Instructing at {profile.current}</p>
-            <p className="card-meta">{profile.location}</p>
+            <div className="hero-card__body">
+              <p className="card-label">Now</p>
+              <p className="card-value">Instructing at {profile.current}</p>
+              <p className="card-meta">{profile.location}</p>
+            </div>
           </aside>
         </section>
 
@@ -111,7 +125,7 @@ export default function HomePage() {
           </div>
           <div className="timeline">
             {journey.map((item) => (
-              <article key={item.org} className="timeline-item">
+              <article key={item.org} className="timeline-item timeline-item--plain">
                 <div className="timeline-logo-wrap" aria-hidden="true">
                   <img className="timeline-logo" src={item.logo} alt="" />
                 </div>
@@ -131,6 +145,7 @@ export default function HomePage() {
         <section id="projects" className="section reveal">
           <div className="section-head">
             <h2>Projects</h2>
+            <p>Some projects I've built.</p>
           </div>
           <div className="project-grid">
             {projects.map((project) => (
@@ -138,20 +153,24 @@ export default function HomePage() {
                 <a href={project.repo} target="_blank" rel="noreferrer" className="project-image-wrap">
                   <img className="project-image" src={project.image} alt={`${project.name} screenshot`} />
                 </a>
-                <div className="project-meta">
-                  <h3>{project.name}</h3>
-                  <p className="project-year">{project.year}</p>
+                <div className="project-card__body">
+                  <div className="project-meta">
+                    <h3>{project.name}</h3>
+                    <p className="project-year">{project.year}</p>
+                  </div>
+                  <p className="desc">{project.description}</p>
+                  <p className="stack">{project.stack}</p>
                 </div>
-                <p className="desc">{project.description}</p>
-                <p className="stack">{project.stack}</p>
               </article>
             ))}
           </div>
         </section>
 
         <section id="contact" className="section contact reveal">
-          <h2>Contact</h2>
-          <p>If you are hiring, collaborating, or building something interesting, reach out.</p>
+          <div className="section-head">
+            <h2>Contact</h2>
+            <p>If you are hiring, collaborating, or building something interesting, reach out.</p>
+          </div>
           <a className="btn primary" href={`mailto:${profile.email}`}>
             {profile.email}
           </a>
@@ -162,11 +181,6 @@ export default function HomePage() {
     </>
   );
 }
-
-
-
-
-
 
 
 
