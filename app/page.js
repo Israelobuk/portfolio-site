@@ -22,21 +22,21 @@ const projects = [
   {
     name: "Black Box Explainer",
     year: "2026",
-    stack: "Python / Streamlit / Local LLM",
+    stack: "React / Vite / Python / FastAPI / Ollama / JavaScript / CSS / Docker",
     image: "/images/blackbox-explainer.png",
     repo: "https://github.com/Israelobuk/blackbox_explainer",
     description:
-      "Local-first app that explains likely reasoning paths behind model outputs using evidence claims, assumptions, uncertainty, and confidence checks.",
+      "AI answer auditing app with a React frontend and FastAPI backend that uses Ollama locally to surface weak reasoning, blind spots, and better follow-up questions.",
     points: ["Schema-validated outputs", "Evidence quote verification", "Ollama support"],
   },
   {
     name: "Pulseboard",
     year: "2026",
-    stack: "Python / PySide6 / Windows",
+    stack: "Python / PostgreSQL / SQL / R / PySide6",
     image: "/images/pulseboard.png",
     repo: "https://github.com/Israelobuk/pulseboard",
     description:
-      "Desktop monitor focused on process behavior and responsive performance telemetry with smooth updates and low-latency UI rendering.",
+      "Desktop performance dashboard built with Python, PostgreSQL, SQL, R, and PySide6 for live telemetry, process tracking, and historical analysis.",
     points: ["Real-time process insights", "Low-latency refresh behavior", "Desktop-first dashboard"],
   },
 ];
@@ -184,8 +184,6 @@ export default function HomePage() {
     </>
   );
 }
-
-
 
 
 
