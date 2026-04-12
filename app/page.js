@@ -20,14 +20,14 @@ const heroHeadline =
 
 const projects = [
   {
-    name: "Black Box Explainer",
+    name: "Latch",
     year: "2026",
-    stack: "React / Vite / Python / FastAPI / Ollama / JavaScript / CSS / Docker",
-    image: "/images/blackbox-explainer.png",
-    repo: "https://github.com/Israelobuk/blackbox_explainer",
+    stack: "Electron / React / TypeScript / SQLite / OAuth",
+    image: "/images/latch.png",
+    repo: "https://github.com/Israelobuk/Latch",
     description:
-      "AI answer auditing app with a React frontend and FastAPI backend that uses Ollama locally to surface weak reasoning, blind spots, and better follow-up questions.",
-    points: ["Schema-validated outputs", "Evidence quote verification", "Ollama support"],
+      "Desktop inbox workspace that connects Gmail and Outlook, prioritizes what needs action, and gives fast thread-level workflow controls.",
+    points: ["Unified inbox triage", "Mailbox state filters", "Desktop-first workflow"],
   },
   {
     name: "Pulseboard",
@@ -184,8 +184,6 @@ export default function HomePage() {
     </>
   );
 }
-
-
 
 
 

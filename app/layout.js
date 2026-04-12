@@ -14,7 +14,7 @@ const ibmPlexMono = IBM_Plex_Mono({
 
 export const metadata = {
   title: "Israel Obukonise",
-  description: "Personal portfolio website for Israel Obukonise, showcasing Black Box Explainer and Pulseboard.",
+  description: "Personal portfolio website for Israel Obukonise, showcasing Latch and Pulseboard.",
 };
 
 export default function RootLayout({ children }) {
