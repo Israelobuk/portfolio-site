@@ -1,5 +1,6 @@
 import { IBM_Plex_Mono, Inter } from "next/font/google";
-import "./globals.css";
+import fs from "node:fs";
+import path from "node:path";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -12,14 +13,20 @@ const ibmPlexMono = IBM_Plex_Mono({
   variable: "--font-mono",
 });
 
+const globalStyles = fs.readFileSync(path.join(process.cwd(), "app", "globals.css"), "utf8");
+
 export const metadata = {
-  title: "Israel Obukonise",
-  description: "Personal portfolio website for Israel Obukonise, showcasing Latch and Pulseboard.",
+  title: "Israel Obukonise | Software Engineering + Data Science Portfolio",
+  description:
+    "Portfolio focused on software engineering, data science, analytics engineering, and practical system delivery.",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <style id="globals-inline" dangerouslySetInnerHTML={{ __html: globalStyles }} />
+      </head>
       <body className={`${inter.variable} ${ibmPlexMono.variable}`}>{children}</body>
     </html>
   );
