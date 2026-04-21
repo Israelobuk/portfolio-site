@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Isobel | Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio website showcasing software projects, tools, and technical work."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-shape bg-shape-1"></div>
+    <div class="bg-shape bg-shape-2"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#top">ISOBEL.dev</a>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero reveal">
+        <p class="eyebrow">Software Portfolio</p>
+        <h1>Building practical tools with clean UX and clear outcomes.</h1>
+        <p class="hero-copy">
+          I design and ship Python-first apps for explainability and system monitoring.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">View Projects</a>
+          <a class="btn btn-ghost" href="#contact">Get In Touch</a>
+        </div>
+      </section>
+
+      <section id="projects" class="projects">
+        <div class="section-head reveal">
+          <p class="eyebrow">Selected Work</p>
+          <h2>Projects</h2>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card reveal" data-tilt>
+            <p class="tag">Electron • React • TypeScript</p>
+            <h3>Latch</h3>
+            <p>
+              Desktop inbox workspace that connects Gmail and Outlook, then prioritizes what matters so actions
+              can be taken quickly.
+            </p>
+            <ul>
+              <li>Unified inbox triage</li>
+              <li>Mailbox state filters</li>
+              <li>Desktop-first workflow</li>
+            </ul>
+          </article>
+
+
+          <article class="project-card reveal" data-tilt>
+            <p class="tag">Python • PySide6 • Monitoring</p>
+            <h3>Pulseboard</h3>
+            <p>
+              Lightweight Windows system monitor focused on CPU, process behavior, and smooth real-time
+              refresh behavior for performance tracking.
+            </p>
+            <ul>
+              <li>Low-latency UI updates</li>
+              <li>Live process insights</li>
+              <li>Desktop-first visual dashboard</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="about reveal">
+        <div>
+          <p class="eyebrow">About</p>
+          <h2>Developer mindset</h2>
+        </div>
+        <p>
+          I care about useful software, reliable behavior, and interfaces that make complex systems easier to
+          understand. I prefer practical engineering over hype and focus on shipping tools people actually use.
+        </p>
+      </section>
+
+      <section id="contact" class="contact reveal">
+        <p class="eyebrow">Contact</p>
+        <h2>Let’s collaborate</h2>
+        <p>Reach out to discuss freelance work, collaborations, or product ideas.</p>
+        <div class="contact-links">
+          <a class="btn btn-primary" href="mailto:youremail@example.com">Email Me</a>
+          <a class="btn btn-ghost" href="https://github.com/yourusername" target="_blank" rel="noreferrer"
+            >GitHub</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p><span id="year"></span> Isobel. Built with HTML, CSS, and JavaScript.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
