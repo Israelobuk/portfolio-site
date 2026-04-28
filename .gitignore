@@ -1,0 +1,12 @@
+﻿.venv/
+__pycache__/
+*.pyc
+webapp/
+node_modules/
+blackbox_explainer/backend/.venv-broken/
+**/*.log
+**/*-LAPTOP-VFD64DMO*
+blackbox_explainer/frontend/src/styles-modern.css
+.playwright-cli/
+.playwright-mcp/
+.vscode/
