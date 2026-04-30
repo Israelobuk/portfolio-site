@@ -702,15 +702,6 @@ body {
   box-shadow: 0 0 22px rgba(129, 167, 214, 0.36);
 }
 
-.systems-map.is-focus-locked .map-node,
-.systems-map.is-focus-locked .map-orbit,
-.systems-map.is-focus-locked .map-orbit-spin,
-.systems-map.is-focus-locked .map-node__inner,
-.systems-map.is-focus-locked .electron-packet,
-.systems-map.is-focus-locked .map-ghost-node {
-  animation-play-state: paused;
-}
-
 .map-node__dot {
   width: 8px;
   height: 8px;
@@ -746,12 +737,14 @@ body {
 
 .node-page {
   position: relative;
-  width: min(640px, calc(100% - 28px));
+  width: min(580px, calc(100% - 40px));
+  max-height: min(72svh, 680px);
   border: 1px solid #87abd7;
   background: rgba(255, 255, 255, 0.97);
-  padding: 14px;
+  padding: 12px;
   display: grid;
-  gap: 10px;
+  gap: 8px;
+  overflow-y: auto;
   box-shadow: 0 20px 34px rgba(77, 107, 151, 0.2);
 }
 
@@ -766,13 +759,13 @@ body {
 
 .node-page h3 {
   margin: 0;
-  font-size: 1.38rem;
+  font-size: 1.24rem;
 }
 
 .node-page__sub {
   margin: 0;
   color: #6c86ad;
-  font-size: 0.86rem;
+  font-size: 0.8rem;
 }
 
 .node-page__body {
@@ -793,16 +786,22 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+  position: sticky;
+  bottom: -12px;
+  margin: 2px -12px -12px;
+  padding: 10px 12px 12px;
+  background: rgba(255, 255, 255, 0.98);
+  border-top: 1px solid var(--line);
 }
 
 .node-mini-projects {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: minmax(280px, calc((100% - 10px) / 2));
+  grid-auto-columns: minmax(240px, calc((100% - 10px) / 2));
   gap: 10px;
   overflow-x: auto;
   overflow-y: hidden;
-  padding-bottom: 4px;
+  padding-bottom: 8px;
   scroll-snap-type: x proximity;
 }
 
@@ -825,9 +824,9 @@ body {
 }
 
 .node-mini-project__body {
-  padding: 8px;
+  padding: 7px;
   display: grid;
-  gap: 6px;
+  gap: 5px;
 }
 
 .node-mini-project__meta {
@@ -839,7 +838,7 @@ body {
 
 .node-mini-project__meta h4 {
   margin: 0;
-  font-size: 0.92rem;
+  font-size: 0.86rem;
 }
 
 .node-mini-project__meta span {
@@ -851,8 +850,8 @@ body {
 .node-mini-project__body p {
   margin: 0;
   color: var(--muted);
-  font-size: 0.78rem;
-  line-height: 1.48;
+  font-size: 0.74rem;
+  line-height: 1.42;
 }
 
 .node-mini-project__stack {
@@ -1228,38 +1227,6 @@ body {
 
   .node-mini-projects {
     grid-auto-columns: minmax(220px, 88%);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .journey-scene,
-  .scene-line,
-  .map-link,
-  .map-globe,
-  .map-node,
-  .map-node__dot,
-  .map-orbit,
-  .map-orbit-spin,
-  .map-node__inner,
-  .electron-packet,
-  .map-ghost-node {
-    animation: none;
-  }
-
-  .scene-frame {
-    animation: none;
-  }
-
-  .journey-panel {
-    transition: none;
-  }
-
-  .map-stage {
-    transition: none;
-  }
-
-  .node-page-shell {
-    animation: none;
   }
 }
 

@@ -63,7 +63,7 @@ const mapNodes = [
     id: "overview",
     label: "Overview",
     title: "System Overview",
-    detail: "Mission-focused CS builder shipping projects across software engineering and data systems.",
+    detail: "Mission-focused CS builder shipping projects across data and software engineering systems.",
     x: 50,
     y: 18,
     section: 0,
@@ -466,9 +466,14 @@ export default function HomePage() {
                     </a>
                   )}
                   {(activeNode.id === "overview" || activeNode.id === "projects") && (
-                    <a className="journey-btn" href={profile.github} target="_blank" rel="noreferrer">
-                      GitHub
-                    </a>
+                    <>
+                      <a className="journey-btn" href={profile.github} target="_blank" rel="noreferrer">
+                        GitHub
+                      </a>
+                      <a className="journey-btn" href={profile.linkedin} target="_blank" rel="noreferrer">
+                        LinkedIn
+                      </a>
+                    </>
                   )}
                 </div>
               </div>
