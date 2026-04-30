@@ -27,14 +27,14 @@ const stats = [
 
 const projects = [
   {
-    name: "Latch",
+    name: "BLOEX",
     year: "2026",
-    stack: "Electron / React / TypeScript / SQLite / OAuth",
-    image: "/images/latch.png",
-    repo: "https://github.com/Israelobuk/Latch",
+    stack: "Python / LangGraph / Ollama / Pydantic / pandas / SQLite",
+    image: "/images/bloex-home.png",
+    repo: "https://github.com/Israelobuk/BLOEX",
     description:
-      "Desktop inbox workspace that connects Gmail and Outlook, prioritizes what needs action, and gives fast thread-level workflow controls.",
-    points: ["Unified inbox triage", "Mailbox state filters", "Desktop-first workflow"],
+      "AI answer auditing platform that checks model responses against source context and returns a clear reliability score.",
+    points: ["Source-backed auditing", "Multi-step reasoning flow", "Stored audit history"],
   },
   {
     name: "Pulseboard",
@@ -72,7 +72,7 @@ const mapNodes = [
     id: "projects",
     label: "Projects",
     title: "Project Nodes",
-    detail: "Latch, Pulseboard, and NewsUTD are active nodes focused on software systems and data-science execution.",
+    detail: "BLOEX, Pulseboard, and NewsUTD are active nodes focused on software systems and data-science execution.",
     x: 78,
     y: 30,
     section: 1,
@@ -152,7 +152,7 @@ const nodePages = {
     subtitle: "Shipped build nodes",
     body:
       "Core portfolio projects focus on real workflows: inbox operations, telemetry dashboards, and applied data products with measurable outcomes.",
-    bullets: ["Latch desktop inbox", "Pulseboard analytics dashboard", "NewsUTD market signal monitor"],
+    bullets: ["BLOEX AI auditing platform", "Pulseboard analytics dashboard", "NewsUTD market signal monitor"],
     actions: [{ type: "section", section: 1, label: "Open Projects Section" }],
   },
   experience: {
